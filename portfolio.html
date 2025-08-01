@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Mostafa</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<script>
+    function downloadCvBtn(){
+document.getElementById("downloadCvBtn").addEventListener("click", function () {
+    const link = document.createElement("a");
+    link.href = "ELKHRAIFI%20MOHAMMED.pdf"; // nom exact du fichier
+    link.download = "ELKHRAIFI_MOHAMMED_CV.pdf"; // nom souhaité au téléchargement
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  })
+    }
+
+</script>
+
+<body class="bg-gray-900 text-gray-100">
+  <!-- Header -->
+  <header class="bg-gray-800 py-6 shadow-lg">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white">ELKHRAIFI MOHAMMED | Développeur Web</h1>
+      <button id="downloadCvBtn" onclick="downloadCvBtn()"
+    class="bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-5 py-2 rounded-lg font-medium shadow hover:opacity-90 transition">
+    📄 CV
+</button>
+    </div>
+  </header>
+
+  <!-- À propos -->
+  <section class="py-20 bg-gray-900">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-extrabold text-white mb-6">👋 À propos de moi</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="./image.jpg" alt="Photo de Mostafa" class="w-48 h-48 rounded-full object-cover shadow-lg">
+        <p class="text-lg leading-relaxed text-gray-300 text-left">
+          Je suis Mostafa, diplômé du Bac en 2022, avec 2 ans de formation en développement digital. Actuellement en licence professionnelle à EST Casablanca. J'ai aussi travaillé comme freelance sur 3 projets réels pour développer mes compétences dans le monde professionnel.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projects" class="py-20 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-4xl font-extrabold text-center text-white mb-14">🚀 Projets Réalisés</h3>
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Projet 1 -->
+        <div class="bg-gray-700 rounded-xl shadow-md hover:shadow-xl transition p-6">
+          <img src="./students_management.jpg" alt="Gestion Étudiants" class="w-full h-40 object-cover rounded mb-4">
+          <h4 class="text-xl font-bold text-white mb-2">🧑‍🎓 Gestion Étudiants</h4>
+          <p class="text-gray-300 mb-2">Application web pour gérer les inscriptions, notes moudules ,filiere .</p>
+          <p class="text-sm text-gray-400">Django, PostgreSQL, Tailwind CSS</p>
+          <div class="mt-4 flex justify-between text-sm text-indigo-300">
+            <a href="https://students-management-d64g.vercel.app/" class="hover:underline">Voir App</a>
+            <a href="https://github.com/ELKHRAIFI-MOHAMMED/students_management" class="hover:underline">Code GitHub</a>
+          </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="bg-gray-700 rounded-xl shadow-md hover:shadow-xl transition p-6">
+          <img src="./smdvv.jpg" alt="E-commerce Sneakers" class="w-full h-40 object-cover rounded mb-4">
+          <h4 class="text-xl font-bold text-white mb-2">🛒 E-commerce Manager</h4>
+          <p class="text-gray-300 mb-2">
+  Solution pour la gestion des stocks, des commandes, des dépenses, des rôles des employés, ainsi que le calcul des commissions et des bénéfices.
+</p>
+
+          <p class="text-sm text-gray-400">React, Laravel, MySQL</p>
+          <div class="mt-4 flex justify-between text-sm text-indigo-300">
+            <a href="#" class="hover:underline">Voir App</a>
+            <a href="#" class="hover:underline">Code GitHub</a>
+          </div>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="bg-gray-700 rounded-xl shadow-md hover:shadow-xl transition p-6">
+          <img src="./pokemons.jpg" alt="Dashboard RH" class="w-full h-40 object-cover rounded mb-4">
+          <h4 class="text-xl font-bold text-white mb-2">⚡ Pokémon Hub</h4>
+          <p class="text-gray-300 mb-2">Interface de gestion des Pokémon avec une api JSON</p>
+          <p class="text-sm text-gray-400">angular, JSON SERVER, CSS</p>
+          <div class="mt-4 flex justify-between text-sm text-indigo-300">
+            <a href="https://pokemons.smdvv.ma/" class="hover:underline">Voir App</a>
+            <a href="https://github.com/ELKHRAIFI-MOHAMMED/Pokemon_app" class="hover:underline">Code GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="skills" class="bg-gray-900 py-20">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-4xl font-extrabold mb-12 text-white">💡 Compétences & Outils</h3>
+      <!-- FRONTEND -->
+      <div class="mb-12">
+        <h4 class="text-2xl font-bold text-pink-400 mb-4">🌐 Frontend</h4>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="bg-pink-200 text-pink-900 px-4 py-2 rounded-full text-sm">HTML</span>
+          <span class="bg-pink-200 text-pink-900 px-4 py-2 rounded-full text-sm">CSS</span>
+          <span class="bg-pink-200 text-pink-900 px-4 py-2 rounded-full text-sm">Tailwind</span>
+          <span class="bg-pink-200 text-pink-900 px-4 py-2 rounded-full text-sm">JavaScript</span>
+          <span class="bg-pink-200 text-pink-900 px-4 py-2 rounded-full text-sm">React</span>
+          <span class="bg-pink-200 text-pink-900 px-4 py-2 rounded-full text-sm">Angular</span>
+        </div>
+      </div>
+      <!-- BACKEND -->
+      <div class="mb-12">
+        <h4 class="text-2xl font-bold text-yellow-400 mb-4">🖥️ Backend</h4>
+        <div class="flex flex-wrap justify-center gap-3">
+            <span class="bg-yellow-200 text-yellow-900 px-4 py-2 rounded-full text-sm">Java</span>
+          <span class="bg-yellow-200 text-yellow-900 px-4 py-2 rounded-full text-sm">Django</span>
+          <span class="bg-yellow-200 text-yellow-900 px-4 py-2 rounded-full text-sm">Laravel</span>
+          <span class="bg-yellow-200 text-yellow-900 px-4 py-2 rounded-full text-sm">Express.js</span>
+          <span class="bg-yellow-200 text-yellow-900 px-4 py-2 rounded-full text-sm">PostgreSQL</span>
+          <span class="bg-yellow-200 text-yellow-900 px-4 py-2 rounded-full text-sm">MySQL</span>
+        </div>
+      </div>
+      <!-- SOFT SKILLS -->
+      <div class="mb-12">
+        <h4 class="text-2xl font-bold text-green-400 mb-4">🤝 Soft Skills</h4>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="bg-green-200 text-green-900 px-4 py-2 rounded-full text-sm">Travail en équipe</span>
+          <span class="bg-green-200 text-green-900 px-4 py-2 rounded-full text-sm">Autonomie</span>
+          <span class="bg-green-200 text-green-900 px-4 py-2 rounded-full text-sm">Créativité</span>
+          <span class="bg-green-200 text-green-900 px-4 py-2 rounded-full text-sm">Communication</span>
+        </div>
+      </div>
+      <!-- METHODOLOGIES -->
+      <div>
+        <h4 class="text-2xl font-bold text-indigo-400 mb-4">🗂️ Méthodologies</h4>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="bg-indigo-200 text-indigo-900 px-4 py-2 rounded-full text-sm">Git</span>
+          <span class="bg-indigo-200 text-indigo-900 px-4 py-2 rounded-full text-sm">GitHub</span>
+          <span class="bg-indigo-200 text-indigo-900 px-4 py-2 rounded-full text-sm">Agile</span>
+          <span class="bg-indigo-200 text-indigo-900 px-4 py-2 rounded-full text-sm">Scrum</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gray-800">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-4xl font-extrabold text-white mb-10">📬 Me Contacter</h3>
+      <p class="text-lg text-gray-300 mb-6">Tu peux me joindre facilement via les liens ci-dessous :</p>
+      <div class="flex justify-center gap-6 flex-wrap">
+        <a href="https://wa.me/212698804769" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full shadow font-semibold">📱 WhatsApp</a>
+        <a href="https://www.linkedin.com/in/mohammed-elkhraifi-40b370296/" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full shadow font-semibold">🔗 LinkedIn</a>
+        <a href="https://github.com/ELKHRAIFI-MOHAMMED" class="bg-gray-700 hover:bg-gray-800 text-white px-6 py-3 rounded-full shadow font-semibold">💻 GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6 mt-20">
+    <p class="text-sm">&copy; 2025 Mostafa - Tous droits réservés</p>
+  </footer>
+</body>
+
+</html>
